@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GameActivity"
+    android:background="@drawable/color_bg">
+
+    <FrameLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:orientation="vertical"
+            android:background="@drawable/elements_bg">
+
+            <TextView
+                android:id="@+id/scoreTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/score"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/font2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="@drawable/elements_circle_bg">
+
+            <TextView
+                android:id="@+id/levelTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/zero"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/font2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:orientation="vertical"
+            android:background="@drawable/elements_bg">
+
+            <TextView
+                android:id="@+id/moveTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/move"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/font2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner_id"/>
+
+    <com.applovin.mediation.ads.MaxAdView
+        xmlns:maxads="http://schemas.applovin.com/android/1.0"
+        android:id="@+id/MaxAdView"
+        maxads:adUnitId="YOUR_ID_HERE"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

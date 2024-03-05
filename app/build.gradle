@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+    id 'applovin-quality-service'
+}
+
+applovin {
+    apiKey "dZWcWarWQRnpBCaHnHOWLw_eNFdTJl0warhL2sSXVBTxElchUmmzMz5DR2IT0aaFwDJxS9GcyAuyv37pMead1v"
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.match3game2"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.example.match3game2'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // third-party --------------------------------------------------------
+    implementation 'com.github.GrenderG:Toasty:1.5.2'                       // Toasty
+    implementation 'com.github.IbrahimOdeh:ibraToast:2.0.0'                 // Ibra Toast
+    implementation 'com.mikhaellopez:circularimageview:4.3.1'               // Image Circle
+    implementation 'com.google.code.gson:gson:2.10.1'                       // GSON
+    implementation 'com.android.volley:volley:1.2.1'                        // Volley
+    implementation 'com.balysv:material-ripple:1.0.2'                       // Ripple
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'        // Admob
+    implementation 'com.applovin:applovin-sdk:12.1.0'                       // Applovin MAX
+    implementation 'com.applovin.mediation:facebook-adapter:6.16.0.2'       // AppLovin Facebook Adapter
+    implementation 'com.applovin.mediation:unityads-adapter:4.8.0.0'        // AppLovin Unity Ads Adapter
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

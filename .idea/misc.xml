@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/border.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/btn_white.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/button_bg.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/color_bg.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/edittext_bg.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/ic_privacy.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/ic_refresh.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/ic_signal_wifi_off.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/ic_update.xml" value="0.142" />
+        <entry key="app/src/main/res/drawable/ic_web.xml" value="0.142" />
+        <entry key="app/src/main/res/font/m.xml" value="0.26296296296296295" />
+        <entry key="app/src/main/res/layout/action_bar.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/activity_feedback.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/activity_game.xml" value="0.22554347826086957" />
+        <entry key="app/src/main/res/layout/activity_game_over.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_latest_with.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22554347826086957" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_my_wallet.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/activity_privacy.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.2613283903702446" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22554347826086957" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.22554347826086957" />
+        <entry key="app/src/main/res/layout/activity_withdrawal.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/dialog_game_level.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog_game_over.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/dialog_redeem.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/dialog_show_ad.xml" value="0.390625" />
+        <entry key="app/src/main/res/layout/dialog_you_won.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/item_latest_withdrawal.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/no_internet.xml" value="0.22554347826086957" />
+        <entry key="app/src/main/res/layout/you_won_dialog.xml" value="0.213768115942029" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/appNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_board"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/appNameTxt">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/game_board"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/boardTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_board"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/font1"
+            android:gravity="center"
+            android:layout_marginTop="11dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/boardTxt"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_xlarge"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_points"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/font1"
+                    android:layout_marginTop="11dp"/>
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/points_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/font1"
+                    android:layout_marginTop="11dp"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_xlarge"/>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_play"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/elements_bg"
+                        android:text="@string/start_play"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/font2"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/achievements_btn"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/elements_bg"
+                        android:text="@string/my_achievements"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/font2"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/withdrawal_btn"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/elements_bg"
+                        android:text="@string/withdrawal"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/font2"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/latestWithdrawal_btn"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/elements_bg"
+                        android:text="@string/latest_payments"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/font2"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/feedback_btn"
+                        android:layout_width="140dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/elements_bg"
+                        android:text="@string/toolbar_feedback"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/font2"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="45dp">
+
+                <Button
+                    android:id="@+id/share_btn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/elements_circle_bg"
+                    android:drawableStart="@drawable/ic_share_24"
+                    app:drawableTint="@color/white"
+                    android:paddingStart="11dp"
+                    tools:ignore="RtlSymmetry"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/rate_btn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/elements_circle_bg"
+                    android:drawableStart="@drawable/ic_star_24"
+                    app:drawableTint="@color/white"
+                    android:paddingStart="11dp"
+                    tools:ignore="RtlSymmetry"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/about_btn"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/elements_circle_bg"
+                    android:drawableStart="@drawable/ic_info"
+                    app:drawableTint="@color/white"
+                    android:paddingStart="11dp"
+                    tools:ignore="RtlSymmetry"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner_id"/>
+
+    <com.applovin.mediation.ads.MaxAdView
+        xmlns:maxads="http://schemas.applovin.com/android/1.0"
+        android:id="@+id/MaxAdView"
+        maxads:adUnitId="YOUR_ID_HERE"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
